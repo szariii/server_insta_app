@@ -1,0 +1,31 @@
+# POST http://localhost:3000/api/users/register HTTP/1.1
+
+# {
+#     "from": "konradszarek@yahoo.com",
+#     "to": "szarekonrad@gmail.com",
+#     "subject": "mail subject",
+#     "text": "mail text",
+#     "html": "<b>mail html</b>"
+# }
+
+###
+POST http://localhost:3000/api/user/register HTTP/1.1
+
+{    
+   "name": "name",
+   "lastName": "lastName",
+   "email":"konradszarek@yahoo.com",
+   "password":"password"
+}
+
+
+###
+GET http://localhost:3000/api/user HTTP/1.1
+
+###
+POST http://localhost:3000/api/user/login HTTP/1.1
+
+{
+  "email":"konradszarek@yahoo.com",
+  "password":"password"
+}

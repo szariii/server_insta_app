@@ -1,0 +1,1 @@
+// modyfikacje jsona opisującego stan plików

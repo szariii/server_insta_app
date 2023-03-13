@@ -1,0 +1,38 @@
+GET http://localhost:3000/api/filters/metadata/1652854961994 HTTP/1.1
+
+###
+
+PATCH http://localhost:3000/api/filters HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1652894739531,
+    "operation": "tint"
+}
+
+### //resize
+PATCH http://localhost:3000/api/filters HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1652894739531,
+    "operation": "resize",
+    "width": 150,
+    "height": 97
+}
+
+###
+PATCH http://localhost:3000/api/filters HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1652895784795,
+    "operation": "crop",
+    "width": 150,
+    "height": 97,
+    "left": 20,
+    "top": 20
+}
+
+###
+GET http://localhost:3000/uploads/siemano/upload_7ed1ee3f99833d5e98b272e92fe511ea.jpg HTTP/1.1
